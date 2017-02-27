@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp">
+
+    <TextView
+        android:text="@string/threadIcon"
+        android:id="@+id/iconId"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:id="@+id/subredditId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:textSize="10sp"
+                tools:text="r/gifs" />
+
+            <TextView
+                android:id="@+id/timeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="10sp"
+                tools:text="7 hours ago" />
+
+            <TextView
+                android:id="@+id/originLinkId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:textSize="10sp"
+                tools:text="i.imgur" />
+
+
+
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/threadId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop = "4dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"
+                tools:text="Long placeholder location that should wrap to more than 2 lines of text but if not oh well what can we do except cry and cry and cry woo hello what is going on now I need a placeholder icon." />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/commentsIconId"
+                    android:text="@string/commentsIcon"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="1000 comments"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

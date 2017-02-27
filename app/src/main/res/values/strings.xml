@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Reddit</string>
+    <string name="commentsIcon">&#xf075;</string>
+    <string name="threadIcon">&#xf1e8;</string>
+</resources>
